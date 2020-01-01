@@ -30,3 +30,16 @@ Refactoring points
 7) unnecessary isset checks replace with array_get
 
 Note: code can more be refactored using Laravel validation, relations and query scopes.
+
+-------------------------
+
+Bad Code:
+
+- There are code duplication.
+- Variable names doesn’t provide code context.
+- Too many Nested blocks, hard to debug and understand.
+- Curl, email, pusher, All the code is merged in one file. SRP Pattern was violated.
+- By only looking at the code, it was giving impressions that Eloquent Relationships were not properly defined and not properly been used.
+- Validation, response formation, this code is in repository which is totally wrong.
+- Validation is done through PHP code, Laravel validator was not used.
+- I didn’t refactor Repo class because it is one Giant of a class with 2000+ lines of code, everything is stuffed in here.
